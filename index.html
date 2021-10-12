@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/superhero/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Marvel Hero Search</title>
+  </head>
+  <body>
+    <header id="showcase">
+      <div class="overlay"></div>
+      <div class="showcase-content">
+        <h1>Marvel Hero Search</h1>
+        <p>
+          Look up your favorite Marvel superheros by using the Marvel Comics
+          API!
+        </p>
+        <a href="#search" class="button">Try it out</a>
+      </div>
+    </header>
+
+    <section id="search" class="p-5 bg-black">
+      <div class="container search-container">
+        <div class="search card card-body">
+          <!-- <h1>Search for Hero</h1> -->
+          <p class="lead">Enter a Marvel superhero's name</p>
+          <input
+            type="text"
+            id="search-hero"
+            class="form-control"
+            placeholder="Hero Name..."
+          />
+          <div id="background"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-3 text-center bg-black">
+      Created by &copy <a href="https://curtiskilgore.com/">Curtis Kilgore</a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="marvel.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
